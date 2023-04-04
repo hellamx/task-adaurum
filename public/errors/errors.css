@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #535C68;
+}
+
+a {
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    background: #535C68;
+    border-radius: 5px;
+    color: #fff;
+}
+
+a:hover {
+    transition: all .2s ease-out;
+    background: #383f49;
+    transform: scale(1.04);
+}

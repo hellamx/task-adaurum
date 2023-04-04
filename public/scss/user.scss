@@ -1,0 +1,137 @@
+.formWrap {
+    display: flex;
+
+    .firstBlock {
+        margin-right: 20px;
+    }
+
+    .firstBlock, .lastBlock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    select {
+        display: block;
+        color: #535C68;
+        padding: 6px 12px; 
+        width: 100%; 
+        max-width: 100%;
+        margin: 0; 
+        border: 2px solid #535C68;
+        border-radius: 5px;
+        appearance: none;
+        background-color: #fff; 
+        background-image: url('/icons/select.svg'); 
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%; 
+    }
+
+    label {
+        padding: 12px 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 6px 12px;
+        border: 2px solid #535C68;
+        border-radius: 5px;
+
+        &:focus {
+            transition: all .2s ease-out;
+            border: 2px solid #6ab04c;
+        }
+    }
+}
+
+.signupForm input[type="submit"],
+.loginForm input[type="submit"],
+.resetForm input[type="submit"],
+.resaveForm input[type="submit"],
+.addForm input[type="submit"] {
+    padding: 6px 17px;
+    background: #535C68;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+
+    &:hover {
+        transition: all .2s ease-out;
+        background: #383f49;
+    }
+}
+
+.alerts {
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.alertError, .alertSuccess {
+    border-radius: 5px;
+    background: #eb4d4b;
+}
+
+.alertSuccess {
+    background: #6ab04c;
+}
+
+.alertError li, .alertSuccess li {
+    display: flex;
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+#resetPasswordBtn {
+    font-weight: bold;
+    margin: 12px 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.resetForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formWrapper {
+    display: none;
+}
+
+.resetForm input[type="text"] {
+    padding: 6px 12px;
+    border: 2px solid #535C68;
+    border-radius: 5px;
+
+    &:focus {
+        transition: all .2s ease-out;
+        border: 2px solid #6ab04c;
+    }
+}
+
+.common_alerts {
+    margin-bottom: 12px;
+    color: #fff;
+    cursor: pointer;
+
+    .alertError, .alertSuccess {
+        padding: 6px 12px;
+    }
+}
+
+.content__user {
+    p {
+        margin-bottom: 5px;
+    }
+
+    span {
+        color: #000;
+        font-weight: bold;
+    }
+}

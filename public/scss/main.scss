@@ -1,0 +1,302 @@
+.main__title {
+    font-size: 1.6rem;
+    margin-bottom: 19px;
+}
+
+.main__search {
+    margin-bottom: 18px;
+
+    form {
+        display: flex;
+    }
+    
+    input[type="text"], input[type="submit"] {
+        font-size: 1.4rem;
+        padding: 6px 10px;
+        border: 1px solid #535C68;
+        font-weight: bold;
+    }
+
+    input[type="text"] {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    input[type="submit"] {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: #535C68;
+        color: #fff;
+        padding: 6px 20px;
+
+        &:hover {
+            transition: all .2s ease-out;
+            background: #383f49;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    &__wrapper {
+        width: calc((100% / 3) - (2rem / 3));
+        margin-right: 1rem;
+        margin-bottom: 20px;
+        border: 1px solid #EAEAEA;
+        background: #FAFBFC;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        &--title {
+            display: block;
+            background: #535C68;
+            color: #fff;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 15px;
+
+            &:hover {
+                transition: all .2s ease-out;
+                background: #383f49;
+            }
+        }
+
+        
+        &--info {
+            padding: 10px 12px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            ul li {
+                margin-bottom: 14px;
+                max-height: 60px;
+                overflow: hidden;
+
+                span {
+                    color: #000;
+                    display: block;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+
+        &--btn {
+            display: flex;
+
+            .btnOpen, .btnDelete {
+                padding: 4px 9px;
+                background: #EB4D4B;
+                color: #fff;
+                border-radius: 5px;
+                line-height: 20px;
+            }
+
+            .btnOpen {
+                margin-right: 11px;
+                background: #535C68;
+
+                &:hover {
+                    transition: all .2s ease-out;
+                    background: #383f49;
+                    transform: scale(1.04);
+                }
+            }
+
+            .btnDelete {
+                background: #EB4D4B;
+                display: flex;
+                align-items: center;
+
+                img {
+                    display: block;
+                    width: 16px;
+                    height: 14px;
+                    margin-right: 5px;
+                }
+
+                &:hover { 
+                    transition: all .2s ease-out;
+                    background: #b92c2a;
+                    transform: scale(1.04);
+                }
+            }
+        }
+    }
+}
+
+.main__pagination {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        display: flex;
+
+        .pagination--active {
+            background: #383f49;
+        }
+
+        li {
+            margin-right: 14px;
+        }
+
+        li a {
+            display: block;
+            background: #535C68;
+            color: #fff;
+            font-size: 1.4rem;
+            padding: 11px 12px;
+            border-radius: 5px;
+
+            &:hover {
+                transition: all .2s ease-out;
+                background: #383f49;
+                transform: scale(1.04);
+            }
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.main__addCompany--btn {
+    padding: 7px 15px;
+    background: #383f49;
+    color: #fff;
+    display: inline-flex;
+    line-height: 20px;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 18px;
+
+    img {
+        display: block;
+        width: 14px;
+        height: 14px;
+        margin-right: 8px;
+    }
+
+    &:hover {
+        transition: all .2s ease-out;
+        background: #6ab04c;
+    }
+}
+
+.main__addCompany--notUser {
+    margin-bottom: 18px;
+    display: block;
+
+    a {
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.main__pagination ul #pagination--active {
+    cursor: pointer;
+    background: #383f49;
+    border-radius: 5px;
+}
+
+.addWrap {
+    display: none;
+    margin-top: 12px;
+}
+
+.addMainForm {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+
+    textarea {
+        border: 2px solid #535C68;
+        padding: 5px;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        resize: none;
+    }
+
+    .textareaWrap {
+        width: 100%;
+    }
+
+    label {
+        margin-bottom: 12px;
+        display: block;
+    }
+
+}
+
+.addMainForm input[type="submit"], .addField input[type="submit"] {
+    padding: 6px 17px;
+    background: #535C68;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+
+    &:hover {
+        transition: all .2s ease-out;
+        background: #383f49;
+    }
+}
+
+.addField {
+    width: 50%;
+    display: none;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    form {
+        display: block;
+    }
+
+    textarea {
+        width: 100%;
+        border: 2px solid #535C68;
+        border-radius: 5px;
+        padding: 5px;
+        resize: none;
+
+        &:focus {
+            border: 2px solid #383f49;
+        }
+    }
+
+    input[type="submit"] {
+        margin-top: 5px;
+    }
+}
+
+.emptyField {
+    display: block;
+    margin-top: 18px;
+
+    a {
+        color: #000;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

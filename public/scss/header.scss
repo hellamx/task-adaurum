@@ -1,0 +1,48 @@
+.header {
+    padding: 40px 20px 58px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .header__logo {
+        font-size: 24px;
+        font-weight: bold;
+        align-items: center;
+
+        span {
+            font-weight: 400;
+            font-size: 24px;
+        }
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+        line-height: 14px;
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            margin-right: 18px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        ul li a {
+            display: block;
+            padding: 11px 15px;
+            background: #535C68;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1.4rem;
+
+            &:hover {
+                transition: all .2s ease-out;
+                background: #383f49;
+                transform: scale(1.04);
+            }
+        }
+    }
+}
