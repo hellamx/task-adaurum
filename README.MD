@@ -1,5 +1,6 @@
 Стек:
-   - <b>PHP 7.3</b>, MySQL 5.7
+   - <b>PHP 7.3 (на 8.+ есть deprecated features)</b> 
+   - MySQL 5.7
    - JavaScript, jQuery, typeahead.js, ajax
    - RedBeanPHP ORM
 
